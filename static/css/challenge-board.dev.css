@@ -1,0 +1,40 @@
+.chal-desc {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+}
+.chal-desc img {
+  max-width: 100%;
+  height: auto;
+}
+.modal-content {
+    color: #000;
+  border-radius: 0px;
+  max-width: 1000px;
+  padding: 1em;
+  margin: 0 auto;
+  background: url("/themes/spooky/static/img/challenge-modal.png");
+}
+.btn-info {
+  background-color: #5b7290 !important;
+}
+.badge-info {
+  background-color: #5b7290 !important;
+}
+.challenge-button {
+  box-shadow: 3px 3px 3px #e9804d;
+}
+.solved-challenge {
+  background-color: #96c457 !important;
+  opacity: 0.4;
+  border: none;
+}
+.corner-button-check {
+  margin-top: -10px;
+  margin-right: 25px;
+  position: absolute;
+  right: 0;
+}
+.key-submit .btn {
+  height: 51px;
+}
