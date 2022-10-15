@@ -23,9 +23,12 @@
 }
 .challenge-button {
   box-shadow: 3px 3px 3px #e9804d;
+  background: url("/themes/spooky/static/img/dark-pattern.jpg") !important;
+  background-size: cover !important; 
 }
 .solved-challenge {
   background-color: #96c457 !important;
+  background: #96c457 !important;
   opacity: 0.4;
   border: none;
 }
