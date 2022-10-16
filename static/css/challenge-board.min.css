@@ -8,20 +8,27 @@
   height: auto;
 }
 .modal-content {
-  border-radius: 0;
+    color: #000;
+  border-radius: 0px;
   max-width: 1000px;
   padding: 1em;
   margin: 0 auto;
+  background: url("/themes/spooky/static/img/challenge-modal.png");
 }
-.badge-info,
 .btn-info {
   background-color: #5b7290 !important;
 }
+.badge-info {
+  background-color: #5b7290 !important;
+}
 .challenge-button {
-  box-shadow: 3px 3px 3px grey;
+  box-shadow: 3px 3px 3px #e9804d;
+  background: url("/themes/spooky/static/img/dark-pattern.jpg") !important;
+  background-size: cover !important; 
 }
 .solved-challenge {
-  background-color: #37d63e !important;
+  background-color: #96c457 !important;
+  background: #96c457 !important;
   opacity: 0.4;
   border: none;
 }

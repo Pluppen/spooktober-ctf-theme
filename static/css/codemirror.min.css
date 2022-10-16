@@ -11,8 +11,8 @@
 .CodeMirror pre.CodeMirror-line-like {
   padding: 0 4px;
 }
-.CodeMirror-gutter-filler,
-.CodeMirror-scrollbar-filler {
+.CodeMirror-scrollbar-filler,
+.CodeMirror-gutter-filler {
   background-color: #fff;
 }
 .CodeMirror-gutters {
@@ -51,9 +51,6 @@
 }
 .cm-fat-cursor-mark {
   background-color: rgba(20, 255, 20, 0.5);
-}
-.cm-animate-fat-cursor,
-.cm-fat-cursor-mark {
   -webkit-animation: blink 1.06s steps(1) infinite;
   -moz-animation: blink 1.06s steps(1) infinite;
   animation: blink 1.06s steps(1) infinite;
@@ -61,6 +58,9 @@
 .cm-animate-fat-cursor {
   width: auto;
   border: 0;
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
   background-color: #7e7;
 }
 @-moz-keyframes blink {
@@ -97,7 +97,7 @@
   position: absolute;
 }
 .cm-s-default .cm-header {
-  color: #00f;
+  color: blue;
 }
 .cm-s-default .cm-quote {
   color: #090;
@@ -110,7 +110,7 @@
 }
 .cm-header,
 .cm-strong {
-  font-weight: 700;
+  font-weight: bold;
 }
 .cm-em {
   font-style: italic;
@@ -131,13 +131,13 @@
   color: #164;
 }
 .cm-s-default .cm-def {
-  color: #00f;
+  color: blue;
 }
 .cm-s-default .cm-variable-2 {
   color: #05a;
 }
-.cm-s-default .cm-type,
-.cm-s-default .cm-variable-3 {
+.cm-s-default .cm-variable-3,
+.cm-s-default .cm-type {
   color: #085;
 }
 .cm-s-default .cm-comment {
@@ -149,7 +149,9 @@
 .cm-s-default .cm-string-2 {
   color: #f50;
 }
-.cm-s-default .cm-meta,
+.cm-s-default .cm-meta {
+  color: #555;
+}
 .cm-s-default .cm-qualifier {
   color: #555;
 }
@@ -171,8 +173,10 @@
 .cm-s-default .cm-link {
   color: #00c;
 }
-.cm-invalidchar,
 .cm-s-default .cm-error {
+  color: red;
+}
+.cm-invalidchar {
   color: red;
 }
 .CodeMirror-composing {
@@ -208,10 +212,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   position: relative;
   border-right: 50px solid transparent;
 }
-.CodeMirror-gutter-filler,
+.CodeMirror-vscrollbar,
 .CodeMirror-hscrollbar,
 .CodeMirror-scrollbar-filler,
-.CodeMirror-vscrollbar {
+.CodeMirror-gutter-filler {
   position: absolute;
   z-index: 6;
   display: none;
@@ -324,11 +328,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .CodeMirror-code {
   outline: none;
 }
+.CodeMirror-scroll,
+.CodeMirror-sizer,
 .CodeMirror-gutter,
 .CodeMirror-gutters,
-.CodeMirror-linenumber,
-.CodeMirror-scroll,
-.CodeMirror-sizer {
+.CodeMirror-linenumber {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
@@ -351,8 +355,10 @@ div.CodeMirror-cursors {
   position: relative;
   z-index: 3;
 }
-.CodeMirror-focused div.CodeMirror-cursors,
 div.CodeMirror-dragcursors {
+  visibility: visible;
+}
+.CodeMirror-focused div.CodeMirror-cursors {
   visibility: visible;
 }
 .CodeMirror-selected {
